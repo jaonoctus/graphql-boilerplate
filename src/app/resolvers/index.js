@@ -1,9 +1,14 @@
 const usersResolver = require('./usersResolver')
 
 const queryResolvers = () => ({
-  ...usersResolver
+  ...usersResolver.queries
+})
+
+const mutationResolvers = () => ({
+  ...usersResolver.mutations
 })
 
 module.exports = {
-  Query: queryResolvers()
+  Query: queryResolvers(),
+  Mutation: mutationResolvers()
 }
