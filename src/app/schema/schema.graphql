@@ -1,5 +1,1 @@
-# import User from "User.graphql"
-
-type Query {
-  user (id: ID!): User!
-}
+# import Query.* from 'users.graphql'
